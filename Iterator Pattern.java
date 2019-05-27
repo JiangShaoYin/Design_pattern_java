@@ -34,8 +34,8 @@
 	public class IteratorPatternDemo {
 	   public static void main(String[] args) {
 	      NameRepository namesRepository = new NameRepository();
-	 
-	      for(Iterator iter = namesRepository.getIterator();   iter.hasNext()   ;){//iter初始为名字迭代器，如果链尾不空，则往下迭代
+	          //iter初始为名字迭代器，如果链尾不空，则往下迭代
+	      for(Iterator iter = namesRepository.getIterator();   iter.hasNext()   ;){
 	         String name = (String)iter.next();    // 输出：
 	         System.out.println("Name : " + name); // Name : Robert
 																								 // Name : John
@@ -44,3 +44,4 @@
 	      }  
 	   }
 	}
+	
