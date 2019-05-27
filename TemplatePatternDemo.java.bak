@@ -5,7 +5,7 @@ public abstract class Game {
     public final void play(){    //模板
       initialize();              //初始化游戏
       startPlay();               //开始游戏
-      endPlay();                 //结束游戏。
+      endPlay();                 //结束游戏
     }
  }
 
